@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
 			   xmlns:s="library://ns.adobe.com/flex/spark"
 			   width="462" applicationComplete="handler_appComp(event)">
@@ -74,8 +74,8 @@
 				{
 					case "initSDKA":
 						XiaomiExtension.getInstance().XiaomiInit(
-							5826, //appID
-							"99dd0488-958b-f39a-93c6-510a316abd0e",//appKey
+							10086, //appID
+							"what a happy day",//appKey
 							MiGameType.online,//网游 或者 单机
 							PayMode.custom, //大众支付 或者 快捷支付
 							ScreenOrientation.horizontal); //屏幕方向
@@ -85,8 +85,8 @@
 					
 					case "initSDKB":
 						XiaomiExtension.getInstance().XiaomiInit(
-							5826, //appID
-							"99dd0488-958b-f39a-93c6-510a316abd0e",//appKey
+							10086, //appID
+							"what a happy day",//appKey
 							MiGameType.online,//网游 或者 单机
 							PayMode.custom, //大众支付 或者 快捷支付
 							ScreenOrientation.vertical); //屏幕方向
@@ -123,8 +123,8 @@
 					
 					case "payB":
 						XiaomiExtension.getInstance().XiaomiInit(
-							5826, //appID
-							"99dd0488-958b-f39a-93c6-510a316abd0e",//appKey
+							10086, //appID
+							"what a happy day",//appKey
 							MiGameType.online,//网游 或者 单机
 							PayMode.simple, //大众支付 或者 快捷支付
 							ScreenOrientation.vertical); //屏幕方向
