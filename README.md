@@ -11,6 +11,7 @@
 ## 资源
 
 * 官方网站 [Xiaomi](http://app.xiaomi.com/)
+* 未开发下载地址
 
 ## 编译方法
 * 复制 `build/example.build.config` 为 `build/build.config`
