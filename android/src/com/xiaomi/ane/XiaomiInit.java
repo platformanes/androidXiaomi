@@ -18,6 +18,7 @@ import com.xiaomi.gamecenter.sdk.entry.ScreenOrientation;
 public class XiaomiInit implements FREFunction {
 	private String TAG = "XiaomiInit";
 	private FREContext _context;
+	public static Boolean ispayMode = false;
 	@Override
 	public FREObject call(final FREContext context, FREObject[] arg1) {
 		// TODO Auto-generated method stub
@@ -37,6 +38,7 @@ public class XiaomiInit implements FREFunction {
 			appType = arg1[2].getAsBool();
 			appPayMode = arg1[3].getAsBool();
 			OrinentationMode = arg1[4].getAsBool();
+			ispayMode = appPayMode;
 		}
 		catch(Exception e)
 		{

@@ -33,9 +33,7 @@ public class XiaomiPay implements FREFunction ,OnPayProcessListener{
 		String ortherflag = null;
 		String otherkey = null;
 		int money = 5;
-		//大众支付方式
-		MiCommplatform.getInstance().update_pay_mode( PayMode.custom );
-		Log.d(TAG, "---------支付开始-------");
+		
 		if($args.length<1)
 		{
 			_context.dispatchStatusEventAsync(TAG,"参数不正确！");
@@ -63,6 +61,13 @@ public class XiaomiPay implements FREFunction ,OnPayProcessListener{
 			_context.dispatchStatusEventAsync(TAG, "PayError:"+e.getMessage());
 		}
 		
+		//大众支付方式
+		if(XiaomiInit.ispayMode)
+			MiCommplatform.getInstance().update_pay_mode( PayMode.custom );
+		else
+			MiCommplatform.getInstance().update_pay_mode( PayMode.simple );
+		
+		Log.d(TAG, "---------支付开始-------");
 		Log.d(TAG, "---------支付-------"+CpOrderId+CpUserInfo+MiBi+ortherflag+otherkey);
 		money = Integer.parseInt(MiBi);
 		if(money == 0)money = 5;
