@@ -126,7 +126,7 @@
 							5826, //appID
 							"99dd0488-958b-f39a-93c6-510a316abd0e",//appKey
 							MiGameType.online,//网游 或者 单机
-							PayMode.custom, //大众支付 或者 快捷支付
+							PayMode.simple, //大众支付 或者 快捷支付
 							ScreenOrientation.vertical); //屏幕方向
 						
 						var $pattern:Vector.<String> = new Vector.<String>();
