@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/xiaomi/ane/XiaomiExtension" mod="1369108720593" signatureChecksum="196014994" >
+        <def id="com.xiaomi.ane:XiaomiExtension" /> 
+        <dep id="flash.events:StatusEvent" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="flash.events:IEventDispatcher" type="s" /> 
+        <dep id="flash.events:StatusEvent" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="com/xiaomi/ane/MiErrorCode" mod="1369203893109" signatureChecksum="3719620467" >
+        <def id="com.xiaomi.ane:MiErrorCode" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/xiaomi/ane/XiaomiEvents" mod="1369203570828" signatureChecksum="3634910782" >
+        <def id="com.xiaomi.ane:XiaomiEvents" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="_eafb1932059232c8ab892e214a8f18e70fba0ae19ac1f56906a90e3802d2ba0b_flash_display_Sprite" mod="1369203898421" signatureChecksum="2819521211" >
+        <def id="_eafb1932059232c8ab892e214a8f18e70fba0ae19ac1f56906a90e3802d2ba0b_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="b39af2114ea9a11860836b0c5b02173d64b0e9c99bc81974e77cfcc2b1c00dfa"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>
