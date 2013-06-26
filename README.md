@@ -7,6 +7,7 @@
 * 把涉及SDK的jar 文档等去掉（已经和官方沟通 但官方明确不准分享SDK相关文档）
 * 若需要自己写  接SDK的时候 把官方提供的SDK相应文件导入库即可
 * DEMO的相关参数 需要配置正确的才可以正常使用
+* buildANE\Android-ARM\res\drawable\下的bg.jpg请各自请美术画一张替换。（或者自己diy这个activity）
 
 ## 资源
 
