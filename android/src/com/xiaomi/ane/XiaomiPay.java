@@ -1,6 +1,7 @@
 package com.xiaomi.ane;
 
 
+import android.content.Intent;
 import android.util.Log;
 
 import com.adobe.fre.FREArray;
@@ -49,41 +50,25 @@ public class XiaomiPay implements FREFunction ,OnPayProcessListener{
 				return null;
 			}
 
-			CpOrderId = __array.getObjectAt(0).getAsString();
-			CpUserInfo = __array.getObjectAt(1).getAsString();
-			MiBi = (__array.getObjectAt(2).getAsString()); 
-			ortherflag = __array.getObjectAt(3).getAsString();
-			otherkey = __array.getObjectAt(4).getAsString();
+			BridgePayActivity.CpOrderId = __array.getObjectAt(0).getAsString();
+			BridgePayActivity.CpUserInfo = __array.getObjectAt(1).getAsString();
+			BridgePayActivity.MiBi = (__array.getObjectAt(2).getAsString()); 
+			BridgePayActivity.ortherflag = __array.getObjectAt(3).getAsString();
+			BridgePayActivity.otherkey = __array.getObjectAt(4).getAsString();
 
 			//call back string
 		}catch (Exception e) { 
 			// TODO: handle exception
 			_context.dispatchStatusEventAsync(TAG, "PayError:"+e.getMessage());
+			return null;
 		}
 		
-		//大众支付方式
-		if(XiaomiInit.ispayMode)
-			MiCommplatform.getInstance().update_pay_mode( PayMode.custom );
-		else
-			MiCommplatform.getInstance().update_pay_mode( PayMode.simple );
 		
-		Log.d(TAG, "---------支付开始-------");
-		Log.d(TAG, "---------支付-------"+CpOrderId+CpUserInfo+MiBi+ortherflag+otherkey);
-		money = Integer.parseInt(MiBi);
-		if(money == 0)money = 5;
-		MiBuyInfoOnline online = new MiBuyInfoOnline();
-		online.setCpOrderId( CpOrderId );
-		online.setCpUserInfo( CpUserInfo );
-		online.setMiBi(money );
-		try
-		{
-			MiCommplatform.getInstance().miUniPayOnline(_context.getActivity(),online,XiaomiPay.this);
-		}
-		catch ( Exception e )
-		{
-			_context.dispatchStatusEventAsync(TAG, "PayError:"+e.getMessage());
-		}
-		
+		BridgePayActivity._context = _context;
+		Log.d(TAG, "---------Intent处理-------");
+		Intent intent = new Intent(BridgePayActivity.MYACTIVITY_ACTION);
+		_context.getActivity().startActivity(intent);
+		Log.d(TAG, "---------start处理-------");
 		Log.d(TAG, "---------函数返回-------");
 		
 		return result;
@@ -112,7 +97,7 @@ public class XiaomiPay implements FREFunction ,OnPayProcessListener{
 		}
 		else if( arg0 == MiErrorCode.MI_XIAOMI_GAMECENTER_ERROR_LOGIN_FAIL )
 		{
-			_context.dispatchStatusEventAsync(TAG, "您还没有登陆，请先登陆");
+			_context.dispatchStatusEventAsync(TAG, "感谢充值，为确保安全，请先登陆");//您还没登录 请重新登录
 		}
 	}
 }

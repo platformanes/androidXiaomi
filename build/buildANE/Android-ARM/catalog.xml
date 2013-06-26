@@ -10,7 +10,13 @@
   </features>
   <libraries>
     <library path="library.swf">
-      <script name="com/xiaomi/ane/XiaomiExtension" mod="1369108720593" signatureChecksum="196014994" >
+      <script name="_2d978749b3c63be2654a2d0f323473d0b0e7ee819d9e4fc350aac701ccb28dd3_flash_display_Sprite" mod="1370581478218" signatureChecksum="2738780901" >
+        <def id="_2d978749b3c63be2654a2d0f323473d0b0e7ee819d9e4fc350aac701ccb28dd3_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="com/xiaomi/ane/XiaomiExtension" mod="1370581311031" signatureChecksum="4203670837" >
         <def id="com.xiaomi.ane:XiaomiExtension" /> 
         <dep id="flash.events:StatusEvent" type="e" /> 
         <dep id="flash.external:ExtensionContext" type="e" /> 
@@ -25,19 +31,28 @@
         <dep id="AS3" type="n" /> 
         <dep id="Object" type="i" /> 
       </script>
+      <script name="com/xiaomi/ane/MiGameType" mod="1370581270015" signatureChecksum="1454649873" >
+        <def id="com.xiaomi.ane:MiGameType" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
       <script name="com/xiaomi/ane/XiaomiEvents" mod="1369203570828" signatureChecksum="3634910782" >
         <def id="com.xiaomi.ane:XiaomiEvents" /> 
         <dep id="AS3" type="n" /> 
         <dep id="Object" type="i" /> 
       </script>
-      <script name="_eafb1932059232c8ab892e214a8f18e70fba0ae19ac1f56906a90e3802d2ba0b_flash_display_Sprite" mod="1369203898421" signatureChecksum="2819521211" >
-        <def id="_eafb1932059232c8ab892e214a8f18e70fba0ae19ac1f56906a90e3802d2ba0b_flash_display_Sprite" /> 
-        <dep id="flash.system:Security" type="e" /> 
+      <script name="com/xiaomi/ane/ScreenOrientation" mod="1370581287375" signatureChecksum="2730506881" >
+        <def id="com.xiaomi.ane:ScreenOrientation" /> 
         <dep id="AS3" type="n" /> 
-        <dep id="flash.display:Sprite" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/xiaomi/ane/PayMode" mod="1370581257062" signatureChecksum="99102600" >
+        <def id="com.xiaomi.ane:PayMode" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
       </script>
       <digests>
-        <digest type="SHA-256" signed="false" value="b39af2114ea9a11860836b0c5b02173d64b0e9c99bc81974e77cfcc2b1c00dfa"   />
+        <digest type="SHA-256" signed="false" value="ab9d2cd247a70c9b95f7b1fc3914ef18e350c19bb8312aa741c78f34765d9878"   />
       </digests>
     </library>
   </libraries>
